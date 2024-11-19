@@ -7,6 +7,9 @@
 
 body {
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .google-header {
@@ -27,6 +30,30 @@ header {
     gap: 1rem;
 }
 
+.text-Link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-Link:hover {
+    text-decoration: underline;
+}
+
+.icon-Link {
+    font-size: 1rem;
+    color: inherit;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.icon-Link:hover {
+    background: rgb(235, 235, 235);
+}
+
 .img-button {
     border: none;
     background: transparent;
@@ -37,4 +64,28 @@ header {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.input-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.input-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
 }
